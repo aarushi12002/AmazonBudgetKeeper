@@ -10,14 +10,23 @@ changeColor.addEventListener("click", async () => {
 
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    function: getOrder,
+    function: getOrderSumOnPage,
   });
 });
 
 
-function getOrder() {
+function getOrderSumOnPage() {
   console.log("Executing getOrder");
   x= document.getElementById("ordersContainer");
   y = x.getElementsByClassName("a-box-group a-spacing-base order js-order-card");
-  console.log(y);
+  let total = 0;
+  for (let i = 0; i < y.length; i++) {
+    console.log("child");
+    z=y[i].getElementsByClassName("a-column a-span2 yohtmlc-order-total");
+    u=z[0];
+    m = u.outerText.split(/\r?\n/)[1].split('$')[1];
+    console.log(m);
+    total+= parseInt(m);
+  }
+  console.log("$" + total);
 }
