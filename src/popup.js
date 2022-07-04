@@ -21,11 +21,9 @@ function getOrderSumOnPage() {
   y = x.getElementsByClassName("a-box-group a-spacing-base order js-order-card");
   let total = 0;
   for (let i = 0; i < y.length; i++) {
-    console.log("child");
     z=y[i].getElementsByClassName("a-column a-span2 yohtmlc-order-total");
     u=z[0];
     m = u.outerText.split(/\r?\n/)[1].split('$')[1];
-    console.log(m);
     total+= parseInt(m);
   }
   console.log("$" + total);
