@@ -1,5 +1,5 @@
 {
-  "name": "Getting Started Example",
+  "name": "Amazon Budget Keeper",
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
@@ -9,6 +9,8 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "tabs",  "http://*/",
+    "https://*/"],
+  "host_permissions": ["https://*.amazon.com/*"],
   "options_page": "options.html"
 }
