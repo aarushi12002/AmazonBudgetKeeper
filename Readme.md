@@ -2,10 +2,11 @@
 Custom chrome extension to keep track of your expenditure while shopping on Amazon. 
 
 
-###Installation
+### Installation ###
 The plugin hasn't been published to chrome yet.
 Follow official instructions from google for installing unpacked extensions
-###Support
+
+### Support ###
 OS: Mac OS Version 12.0.1+
 Browser: Chrome
 
