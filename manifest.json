@@ -9,8 +9,7 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["storage", "activeTab", "scripting", "tabs",  "http://*/",
-    "https://*/"],
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
   "host_permissions": ["https://*.amazon.com/*"],
   "options_page": "options.html"
 }
