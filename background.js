@@ -29,12 +29,12 @@ function getOrderSumOnPage() {
     if (i==0) {
 
          from =  y[0].getElementsByClassName("a-color-secondary value")[0].innerHTML;
-         chrome.storage.sync.set({'From': from}, function() {
+         chrome.storage.sync.set({'To': from}, function() {
                       console.log('Value is set for from');
             });
     } else if(i==y.length-1) {
         to =  y[i].getElementsByClassName("a-color-secondary value")[0].innerHTML;
-         chrome.storage.sync.set({'To': to}, function() {
+         chrome.storage.sync.set({'From': to}, function() {
                       console.log('Value is set for To');
             });
     }
