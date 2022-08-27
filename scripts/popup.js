@@ -9,9 +9,9 @@ chrome.storage.sync.get("moneyAmount", function(result)  {
 });
 
 chrome.storage.sync.get("From", function(result)  {
-  from.innerHTML = "From: " + result.From;
+  from.innerHTML = "From: " + result.To;
 });
 
 chrome.storage.sync.get("To", function(result)  {
-  to.innerHTML = "To:" + result.To;
+  to.innerHTML = "To:" + result.From;
 });
